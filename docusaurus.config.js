@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'フロントエンドの学習',
-  tagline: 'ひたすら手を動かして自分で確認しながら、体で覚えてもらうための学習コンテンツ',
+  title: 'サービス開発エンジニアのための学習コンテンツ',
+  tagline: 'いろいろ',
   favicon: 'img/favicon.ico',
   trailingSlash:false,
 
@@ -15,7 +15,7 @@ const config = {
   url: 'https://takumon.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/frontend-training/',
+  baseUrl: '/training/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -40,6 +40,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          breadcrumbs: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -58,7 +59,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'フロントエンドの学習',
+        title: '学習課題',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -66,9 +67,15 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'frontendBackend',
             position: 'left',
-            label: '学習コンテンツ',
+            label: 'コンテンツ',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'others',
+            position: 'left',
+            label: 'その他',
           },
           {
             href: 'https://github.com/facebook/docusaurus',
@@ -84,13 +91,13 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: '学習コンテンツ',
+                label: 'フロントエンド・バックエンド',
                 to: '/docs/intro',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} フロントエンドの学習, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} サービス開発エンジニアのための学習コンテンツ, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

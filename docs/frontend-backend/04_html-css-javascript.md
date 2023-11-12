@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
-# HTML/CSS/JavaScript
+# 開発者ツールとHTML/CSS/JavaScript
 
 ## HTML/CSS
 
