@@ -78,7 +78,7 @@ const config = {
             label: 'その他',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Takumon/frontend-training',
             label: 'GitHub',
             position: 'right',
           },
