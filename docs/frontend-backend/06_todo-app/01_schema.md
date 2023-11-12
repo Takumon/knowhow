@@ -43,4 +43,4 @@ sidebar_position: 1
         - 存在しないタスクを指定した際は200
 - [Mockoon](https://mockoon.com/)を使ってモックサーバーを立ち上げて全エンドポイントをcurlで動作確認せよ
   - モックでもレスピンスが返却されるように、exampleを定義すること
-- [React > Context Reducer > useReducerとuseContext](../02_react/03_Context-Reducer.md#usereducerとusecontext) > 1 で実装したアプリ（一部微修正して）、モックサーバーを立ち上げて、画面にて動作確認せよ
+- [React > Context Reducer > useReducerとuseContext](../05_react/03_Context-Reducer.md#usereducerとusecontext) > 1 で実装したアプリ（一部微修正して）、モックサーバーを立ち上げて、画面にて動作確認せよ

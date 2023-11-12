@@ -91,8 +91,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'フロントエンド・バックエンド',
-                to: '/docs/intro',
+                label: 'コンテンツ',
+                to: '/docs/frontend-backend/intro',
+              },
+              {
+                label: 'その他',
+                to: '/docs/others/intro',
               },
             ],
           },

@@ -54,7 +54,7 @@ sidebar_position: 3
     - 200,
     - 400, 401, 403, 404, 405, 409
     - 500, 503
-- インプット：[オライリー | Web API: The Good Parts](www.amazon.co.jp/dp/4873116864)の1～5章
+- インプット：[オライリー | Web API: The Good Parts](https://www.amazon.co.jp/dp/4873116864)の1～5章
 - アウトプット：口頭説明
 
 ### OpenAPI
