@@ -40,9 +40,56 @@ sidebar_position: 3
 
 ### Gitの操作(VSCodeまたはCLIにて)
 
-- 要求スキル：clone、checkout、pull、add、commit、pushなどのコマンド
-- インプット：[Git リファレンス](https://git-scm.com/docs)
-- アウトプット：デモ、口頭説明
+- 要求スキル：
+  - `git help`で説明が表示されるコマンドのうち以下についてのCLIでの操作
+    ```
+    clone
+    init
+    add
+    restore
+    rm
+    diff
+    log
+    status
+    branch
+    commit
+    merge
+    rebase
+    reset
+    tag
+    fetch
+    pull
+    push
+    // 以下対象外
+    // mv
+    // sparse-checkout
+    // # bisect
+    // # grep
+    // # show
+    // # switch
+    ```
+  - VSCodeでのGUI操作
+  - `.gitignore`の理解
+- インプット：
+  - [Gitリファレンス](https://git-scm.com/docs)
+  - [VSCodeでよく使うGit,Gitコマンド,Github](https://zenn.dev/shimomura/articles/vs-code-git-github)
+  - [.gitignoreについて | Gitリファレンス](https://git-scm.com/docs/gitignore)
+- アウトプット：
+  - `git help`を実行し説明内容を確認
+    - ※CLIのコマンドで分からない時はhelpするのを覚える
+  - `git add -h`を実行し
+    - ※CLIのコマンドで分からない時はhelpするのを覚える
+  - [Git リファレンス](https://git-scm.com/docs)のうち、要求スキル記載のコマンドのリファレンスを読む
+    - ※日本語コンテンツに頼らず、英語で情報収集するクセをつける
+    - ※２次ソースに頼らず、１次ソース（公式リフェレンス）を見るクセをつける
+  - [Git リファレンス](https://git-scm.com/docs)記載のコマンドを実際に自分の環境で試す
+    - ※書面での理解に加え、実際に自分で試すクセをつける
+  - [VSCodeでよく使うGit,Gitコマンド,Github](https://zenn.dev/shimomura/articles/vs-code-git-github)を読む
+  - [VSCodeでよく使うGit,Gitコマンド,Github](https://zenn.dev/shimomura/articles/vs-code-git-github)の操作を実際に試す
+    - ※書面での理解に加え、実際に自分で試すクセをつける
+  - [.gitignoreについて | Gitリファレンス](https://git-scm.com/docs/gitignore)読む
+  - `.gitignore`を実際に作ってみて、`.gitignore`の効果を確認する
+  - デモ、口頭説明
 
 ### APIのリクエスト・レスポンス
 
