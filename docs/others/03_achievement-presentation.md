@@ -6,7 +6,74 @@ sidebar_position: 3
 
 新人さんの一年目の成果発表などでは以下を参考にしてください。
 
-- 説明・表現が想定聴衆に向けにする
+## スライド作成の前準備
+
+プレゼンは、スライドのデザインや喋りも重要ですが、特に重要なのは「発表の構成」です。  
+スライドに起こす前にかっちりと決めてください。  
+構成検討では以下を文面で書き起こしてください
+
+- 想定聴衆
+- 発表の全体概要
+- 発表の目的　※想定聴取ごと
+- 各ページの位置付け ※ページごと
+  - 想定聴衆ごとに、ページの発表を聞いた後に、どんな感想・評価を持ってほしいか
+  - 対象ページが全体の目的にどうつながるのか
+
+実際に書き起こすと以下文面になると思います。
+
+```md
+# 発表の構成
+
+## 想定聴衆
+- AAAAAA
+- BBBBBB
+
+## 発表の全体概要
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+## 発表の目的
+
+### AAAAAA向け
+XXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+### BBBBBB向け
+XXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+## ページごとの位置付け
+
+### 1
+
+- 概要
+  -XXXXXXXXXXXXXXXXXXXX
+- 目的
+  - AAAAAA向け
+   - XXXXXXXXXXXXXXXXXXXXXXXXXXX
+  - BBBBBB向け
+   - XXXXXXXXXXXXXXXXXXXXXXXXXXX
+- 全体の目的にどうつながるのか
+  - XXXXXXXXXXXXXXXXXXXXXXXXX
+
+### 2
+
+- 概要
+  -XXXXXXXXXXXXXXXXXXXX
+- 目的
+  - AAAAAA向け
+   - XXXXXXXXXXXXXXXXXXXXXXXXXXX
+  - BBBBBB向け
+   - XXXXXXXXXXXXXXXXXXXXXXXXXXX
+- 全体の目的にどうつながるのか
+  - XXXXXXXXXXXXXXXXXXXXXXXXX
+
+・
+・
+・
+```
+
+## その他注意点
+
+- 説明・表現を想定聴衆に向けにする
   - 想定聴衆が事前に知らない情報を、大前提として説明を省略したりしない
     - 例えば想定聴衆に営業の同期を含むなら、非技術者である営業の同期に伝わるような技術要素の説明にする
 - 構成と目的を明確にする
