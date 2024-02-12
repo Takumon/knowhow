@@ -2,9 +2,10 @@
 sidebar_position: 2
 ---
 
-# 学習に必要な技術とツール郡
+# 準備
 
-学習で利用する技術とツールを紹介する。
+学習で利用する技術とツールを紹介します。  
+以降の学習を進める前に、以下ツールの概要を把握し、インストールしておいてください。
 
 ## 主な使用技術
 
@@ -31,14 +32,8 @@ sidebar_position: 2
 
 ## ツール ※事前インストール必須
 
-:::caution
-
-ツールは学習前にPCにインストールしておくこと。
-
-:::
-
 - [VS Code](https://code.visualstudio.com/)
-  - おすすめのIDE。主に利用するエクステンションは以下コマンドでをインストール可。
+  - IDEです。本体をインストール後に、以下コマンドを実行して拡張機能をインストールしてください。
 
     ```bash
     code --install-extension "aldijav.golangwithdidi"
@@ -76,14 +71,14 @@ sidebar_position: 2
     ```
 
 - [Node.js](https://nodejs.org/)
-  - ランタイムとして利用
+  - ランタイムとして利用します。
 - [Chrome](https://www.google.com/chrome/)
-  - アプリケーションを表示するブラウザとして利用
+  - WEBアプリケーションを表示するためのブラウザとして利用します。
 - React Developer Tools - Chrome Web Store]()
-  - ブラウザでReactのデバッグを簡単にするエクステンションです。
+  - ChromeでReactのデバッグを簡単にするためのChrome拡張機能です。
 - [git](https://gitforwindows.org/)
-  - ソースコードの構成管理用に利用
+  - ソースコードの構成管理用に利用します。
 - [Postman](https://www.postman.com/)
-  - RESTクライアントとして利用
+  - APIを叩くためのRESTクライアントとして利用します。
 - [Mockoon](https://mockoon.com/)
-  - Open APIのモックサーバーに利用
+  - REST APIのモックサーバーとして利用します。

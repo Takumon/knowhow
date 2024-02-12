@@ -69,7 +69,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'frontendBackend',
             position: 'left',
-            label: 'コンテンツ',
+            label: '技術',
           },
           {
             type: 'docSidebar',
@@ -91,7 +91,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'コンテンツ',
+                label: '技術',
                 to: '/docs/frontend-backend/intro',
               },
               {

@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-# 基礎学習
+# 基礎
 
 ## 要求スキル
 
