@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'サービス開発エンジニアのための学習コンテンツ',
-  tagline: 'いろいろ',
+  tagline: '',
   favicon: 'img/favicon.ico',
   trailingSlash:false,
 
