@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'サービス開発エンジニアのための学習コンテンツ',
-  tagline: '',
+  title: 'お役立ち情報',
+  tagline: ``,
   favicon: 'img/favicon.ico',
   trailingSlash:false,
 
@@ -59,7 +59,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: '学習課題',
+        title: 'お役立ち情報',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -69,7 +69,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'frontendBackend',
             position: 'left',
-            label: '技術',
+            label: '学習課題',
           },
           {
             type: 'docSidebar',
@@ -91,7 +91,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: '技術',
+                label: '学習課題',
                 to: '/docs/frontend-backend/intro',
               },
               {
@@ -101,7 +101,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} サービス開発エンジニアのための学習コンテンツ, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} お役立ち情報, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
