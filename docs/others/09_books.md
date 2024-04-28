@@ -11,7 +11,7 @@ sidebar_position: 9
 
 - (本)[問題発見プロフェッショナル「構想力と分析力」](https://www.amazon.co.jp/dp/4478490341)
   - 問題解決関連の本では一番オススメです。体系的に基礎知識を習得し実践に活かせる本だと思います
-- (本)[新版　考える技術・書く技術　問題解決力を伸ばすピラミッド原則](www.amazon.co.jp/dp/4478490279)
+- (本)[新版　考える技術・書く技術　問題解決力を伸ばすピラミッド原則](https://www.amazon.co.jp/dp/4478490279)
 - (本)[具体と抽象](https://www.amazon.co.jp/dp/B016LUTNI2)
   - 文書作成・プログラミングさまざまな分野で使える考え方を学べる本です
 - (本)[ものがわかるということ eBook : 養老孟司: 本](https://www.amazon.co.jp/dp/B0BT4J9Q2K)
@@ -58,8 +58,8 @@ sidebar_position: 9
 
 ## キャリアパス
 
-- (本)[エンジニアのためのマネジメントキャリアパス ―テックリードからCTOまでマネジメントスキル向上ガイド](www.amazon.co.jp/dp/4873118484)
-- (本)[スタッフエンジニア　マネジメントを超えるリーダーシップ](www.amazon.co.jp/dp/429607055X)
+- (本)[エンジニアのためのマネジメントキャリアパス ―テックリードからCTOまでマネジメントスキル向上ガイド](https://www.amazon.co.jp/dp/4873118484)
+- (本)[スタッフエンジニア　マネジメントを超えるリーダーシップ](https://www.amazon.co.jp/dp/429607055X)
 
 ## リーダー・マネジメント
 
@@ -69,13 +69,13 @@ sidebar_position: 9
   - EM向けですが、EMでなくても部下を牽引するリーダーがパフォーマンスを発揮するために参考になる情報が詰まっている本です
 - (本)[Measure What Matters（メジャー・ホワット・マターズ） 伝説のベンチャー投資家がGoogleに教えた成功手法 OKR](https://www.amazon.co.jp/dp/B07JCZVFZ9)
   - OKRをしっかり学べる本です
-- (本)[シリコンバレー式 最強の育て方 ―人材マネジメントの新しい常識 1on1ミーティング](www.amazon.co.jp/dp/B075FQYKK9)
+- (本)[シリコンバレー式 最強の育て方 ―人材マネジメントの新しい常識 1on1ミーティング](https://www.amazon.co.jp/dp/B075FQYKK9)
   - 1on1をすることになったら読んでください。さらっと読める実践的な本です
 - (WEB)[Questions for our first 1:1 | Lara Hogan](https://larahogan.me/blog/first-one-on-one-questions/)]
   - 初回1on1で部下に聞くべき質問集です。
-- (本)[フィードバック入門 耳の痛いことを伝えて部下と職場を立て直す技術](www.amazon.co.jp/dp/B06VVQ8V36)
+- (本)[フィードバック入門 耳の痛いことを伝えて部下と職場を立て直す技術](https://www.amazon.co.jp/dp/B06VVQ8V36)
   - ネガティブ・フィードバックをどうやって部下に腹落ちさせるかが学べます
-- (本)[HIGH OUTPUT MANAGEMENT(ハイアウトプット マネジメント) 人を育て、成果を最大にするマネジメント](www.amazon.co.jp/dp/4822255018)
+- (本)[HIGH OUTPUT MANAGEMENT(ハイアウトプット マネジメント) 人を育て、成果を最大にするマネジメント](https://www.amazon.co.jp/dp/4822255018)
   - マネジメントの基礎が学べます。若干日本語訳が読みづらいですが...
 
 ## PodCasts
