@@ -275,6 +275,41 @@ sidebar_position: 4
   - 何かを見せながら議論する時に便利です。
 - カメラオン/オフ：`Alt`+`v`
 
+### Excel
+
+- シート
+  - 追加：`Alt`+`I`→`W`
+  - 削除：`Alt`+`E`→`L`
+  - 名前変更：`Alt`+`H`→`O`→`R`
+  - 移動(→)：`Alt`+`PageDown`
+  - 移動(←)：`Alt`+`PageUp`
+- 行
+  - 選択：`Ctrl`+`Space`
+  - 追加：`Alt`+`I`→`R` ※IはInsert、RはRow
+  - 削除：`Alt`+`E`→`D`→`R`+`Enter`
+- 列
+  - 選択：`Shift`+`Space` ※半角入力の状態で
+  - 追加：`Alt`+`I`→`C` ※IはInsert、RはColumn
+  - 削除：`Alt`+`E`→`D`→`C`+`Enter`
+- 貼り付け
+  - 値：`Alt`+`E`→`S`→`V`→`Enter`
+  - 書式：`Alt`+`E`→`S`→`T`→`Enter`
+- 編集
+  - 背景色：`Alt`+`H`→`H`
+  - 文字>色：`Alt`+`H`→`F`→`C` ※Font Color
+  - 文字>大きさ：`Alt`+`H`→`F`→`S` ※Font Size
+  - 左寄せ：`Alt`+`H`→`A`→`L` ※Align Left
+  - 中央寄せ：`Alt`+`H`→`A`→`C` ※Align Center
+  - 右寄せ：`Alt`+`H`→`A`→`R` ※Align Right
+  - 罫線>大枠：`Alt`+`H`→`B`→`S`
+  - 罫線>格子枠：`Alt`+`H`→`B`→`A`
+  - 幅調整：`Alt`+`H`→`O`→`I`
+- 移動
+  - ↑：`Shift`+`Enter`
+  - ↓：`Enter`
+  - ←：`Shift`+`Tab`
+  - →：`Tab`
+
 ## ツール
 
 ### ランチャーアプリ
