@@ -131,11 +131,11 @@ const config = {
             items: [
               {
                 label: '学習課題',
-                to: '/training/intro',
+                to: '/training',
               },
               {
                 label: 'ナレッジ',
-                to: '/knowledge/intro',
+                to: '/knowledge',
               },
             ],
           },
