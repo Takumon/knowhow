@@ -1,4 +1,5 @@
 ---
+slug: /knowledge
 sidebar_position: 1
 ---
 

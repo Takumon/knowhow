@@ -9,3 +9,12 @@
   height: 200px;
   width: 200px;
 }
+
+.cardLink {
+  cursor:pointer;
+  display: block;
+}
+
+.cardLink:hover {
+  opacity: 0.9;
+}

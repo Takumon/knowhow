@@ -1,10 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
-
+import Link from '@docusaurus/Link';
 const FeatureList = [
   {
     title: '学習課題',
+    url: 'training',
     Svg: require('@site/static/img/logo.svg').default,
     description: (
       <>
@@ -13,7 +14,8 @@ const FeatureList = [
     ),
   },
   {
-    title: 'その他',
+    title: 'ナレッジ',
+    url: 'knowledge',
     Svg: require('@site/static/img/logo.svg').default,
     description: (
       <>
@@ -21,11 +23,22 @@ const FeatureList = [
       </>
     ),
   },
+  {
+    title: 'ブログ',
+    url: 'blog',
+    Svg: require('@site/static/img/logo.svg').default,
+    description: (
+      <>
+        自分の備忘録として、調べたこと学んだことを記載します。
+      </>
+    ),
+  },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, title, description,url}) {
+
   return (
-    <div className={clsx('col col--4')}>
+    <Link to={url} className={`col col--4 ${styles.cardLink}`}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
@@ -33,7 +46,7 @@ function Feature({Svg, title, description}) {
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
-    </div>
+    </Link>
   );
 }
 

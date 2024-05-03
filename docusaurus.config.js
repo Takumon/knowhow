@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'お役立ち情報',
+  title: 'Takumon',
   tagline: ``,
   favicon: 'img/favicon.ico',
   trailingSlash:false,
@@ -15,12 +15,12 @@ const config = {
   url: 'https://takumon.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/frontend-training/',
+  baseUrl: '/knowhow',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Takumon', // Usually your GitHub org/user name.
-  projectName: 'frontend-training', // Usually your repo name.
+  projectName: 'knowhow', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -29,8 +29,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'ja',
+    locales: ['ja'],
   },
 
   presets: [
@@ -39,12 +39,10 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
+          path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           breadcrumbs: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -53,13 +51,48 @@ const config = {
     ],
   ],
 
+  // plugins: [
+  //   [
+  //     '@docusaurus/plugin-content-docs',
+  //     {
+  //       id: 'training',
+  //       path: 'training',
+  //       routeBasePath: 'training',
+  //       breadcrumbs: true,
+  //       sidebarPath: require.resolve('./sidebars.js'),
+  //       showLastUpdateTime: true,
+  //     },
+  //   ],
+  //   [
+  //     '@docusaurus/plugin-content-docs',
+  //     {
+  //       id: 'knowledge',
+  //       path: 'knowledge',
+  //       routeBasePath: 'knowledge',
+  //       breadcrumbs: true,
+  //       sidebarPath: require.resolve('./sidebars.js'),
+  //       showLastUpdateTime: true,
+  //     },
+  //   ],
+  //   [
+  //     '@docusaurus/plugin-content-docs',
+  //     {
+  //       id: 'blag',
+  //       path: 'blag',
+  //       routeBasePath: 'blag',
+  //       breadcrumbs: true,
+  //       sidebarPath: require.resolve('./sidebars.js'),
+  //       showLastUpdateTime: true,
+  //     },
+  //   ],
+  // ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'お役立ち情報',
+        title: 'Takumon',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -67,18 +100,24 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'frontendBackend',
+            sidebarId: 'training',
             position: 'left',
             label: '学習課題',
           },
           {
             type: 'docSidebar',
-            sidebarId: 'others',
+            sidebarId: 'knowledge',
             position: 'left',
-            label: 'その他',
+            label: 'ナレッジ',
           },
           {
-            href: 'https://github.com/Takumon/frontend-training',
+            type: 'docSidebar',
+            sidebarId: 'blog',
+            position: 'left',
+            label: 'ブログ',
+          },
+          {
+            href: 'https://github.com/Takumon/knowhow',
             label: 'GitHub',
             position: 'right',
           },
@@ -92,16 +131,16 @@ const config = {
             items: [
               {
                 label: '学習課題',
-                to: '/docs/frontend-backend/intro',
+                to: '/training/intro',
               },
               {
-                label: 'その他',
-                to: '/docs/others/intro',
+                label: 'ナレッジ',
+                to: '/knowledge/intro',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} お役立ち情報, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Takumon, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

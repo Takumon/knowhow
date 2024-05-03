@@ -1,4 +1,5 @@
 ---
+slug: /training
 sidebar_position: 1
 ---
 
