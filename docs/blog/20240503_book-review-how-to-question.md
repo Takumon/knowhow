@@ -1,5 +1,5 @@
 ---
-slug: /blog/bock-review-how-to-question
+slug: /blog/book-review-how-to-question
 sidebar_position: 2
 title: 読書感想 「問いかけの作法」は対話のバリエーションを増やしてくれる実践的な本だった
 keywords:
