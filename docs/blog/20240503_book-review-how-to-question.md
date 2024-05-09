@@ -17,7 +17,7 @@ last_update:
 ## 参考
 
 - 今回読んだ本
-  - [問いかけの作法 チームの魅力と才能を引き出す技術](https://amzn.asia/d/iGN8JVS) 
+  - [問いかけの作法 チームの魅力と才能を引き出す技術](https://amzn.asia/d/iGN8JVS)
 - 著者がPodcastで本を紹介しています
   - [65. 問いかけの作法(前編) w/ YukiAnzai](https://fukabori.fm/episode/65)
   - [66. 問いかけの作法(後編) w/ YukiAnzai](https://fukabori.fm/episode/66)
