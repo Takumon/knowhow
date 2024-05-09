@@ -43,6 +43,7 @@ const config = {
           path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           breadcrumbs: true,
+          showLastUpdateTime: true,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
