@@ -12,7 +12,6 @@ tags:
   - 問いかけの作法
 last_update:
   date: 2024-05-09T00:00:00.000+09:00
-draft: true
 ---
 
 ## 参考
