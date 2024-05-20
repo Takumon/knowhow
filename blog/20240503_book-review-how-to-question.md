@@ -2,6 +2,7 @@
 slug: /blog/book-review-how-to-question
 sidebar_position: 20240509
 title: 読書感想 「問いかけの作法」は対話のバリエーションを増やしてくれる実践的な本
+description: Takumon Blog
 keywords:
   - 読書感想
   - マネジメント
@@ -10,17 +11,18 @@ tags:
   - 読書感想
   - マネジメント
   - 問いかけの作法
-last_update:
-  date: 2024-05-09T00:00:00.000+09:00
+date: 2024-05-09T00:00:00.000+09:00
 ---
 
-## 参考
+## 今回読んだ本
 
-- 今回読んだ本
-  - [問いかけの作法 チームの魅力と才能を引き出す技術](https://amzn.asia/d/iGN8JVS)
-- 著者の方がPodcastで本を紹介しています
-  - [65. 問いかけの作法(前編) w/ YukiAnzai](https://fukabori.fm/episode/65)
-  - [66. 問いかけの作法(後編) w/ YukiAnzai](https://fukabori.fm/episode/66)
+[問いかけの作法 チームの魅力と才能を引き出す技術](https://amzn.asia/d/iGN8JVS)<br/>
+
+<img alt="Book Cover" src={require('./20240503_book-review-how-to-question_book-cover.jpg').default} style={{border: '1px solid black'}} />
+
+※著者の方がPodcastで本を紹介しています
+- [65. 問いかけの作法(前編) w/ YukiAnzai](https://fukabori.fm/episode/65)
+- [66. 問いかけの作法(後編) w/ YukiAnzai](https://fukabori.fm/episode/66)
 
 ## サマリ
 

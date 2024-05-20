@@ -45,6 +45,13 @@ const config = {
           breadcrumbs: true,
           showLastUpdateTime: true,
         },
+        blog: {
+          blogTitle: 'Docusaurus blog!',
+          blogDescription: 'A Docusaurus powered blog!',
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
+          postsPerPage: 'ALL',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -112,7 +119,7 @@ const config = {
             label: 'ナレッジ',
           },
           {
-            type: 'docSidebar',
+            to: 'blog',
             sidebarId: 'blog',
             position: 'left',
             label: 'ブログ',

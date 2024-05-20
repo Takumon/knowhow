@@ -1,7 +1,7 @@
 ---
 slug: /blog/book-review-work-with-others
 sidebar_position: 20240520
-title: 読書感想「他者と働く-わかりあえなさから始める組織論-」は、おおらかな気持ちで相手とWin-Winの関係を気づく手法と姿勢が学べる本
+title: 読書感想「他者と働く～わかりあえなさから始める組織論～」は、おおらかな気持ちで相手とWin-Winの関係を気づく手法と姿勢が学べる本
 keywords:
   - 読書感想
   - マネジメント
@@ -10,14 +10,13 @@ tags:
   - 読書感想
   - マネジメント
   - 組織論
-last_update:
-  date: 2024-05-20T00:00:00.000+09:00
+date: 2024-05-20T00:00:00.000+09:00
 ---
 
-## 参考
+## 今回読んだ本
 
-- 今回読んだ本
-  - [他者と働く-「わかりあえなさ」から始める組織論-](https://www.amazon.co.jp/dp/B07Y5FF3M4)
+[他者と働く～「わかりあえなさ」から始める組織論～](https://www.amazon.co.jp/dp/B07Y5FF3M4)<br/>
+<img alt="Book Cover" src={require('./20240520_book-review-work-with-others_book-cover.jpg').default} style={{border: '1px solid black'}} />
 
 ## サマリ
 
