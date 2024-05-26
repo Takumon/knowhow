@@ -16,7 +16,7 @@ date: 2024-05-20T00:00:00.000+09:00
 ## 今回読んだ本
 
 [他者と働く～「わかりあえなさ」から始める組織論～](https://www.amazon.co.jp/dp/B07Y5FF3M4)<br/>
-<img alt="Book Cover" src={require('./20240520_book-review-work-with-others_book-cover.jpg').default} style={{border: '1px solid black'}} />
+<img alt="Book Cover" src={require('./20240520_book-review-work-with-others_book-cover.jpg').default} style={{border: '1px solid black',maxWidth:'200px'}} />
 
 ## サマリ
 

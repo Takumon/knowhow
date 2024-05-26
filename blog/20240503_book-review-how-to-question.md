@@ -18,7 +18,7 @@ date: 2024-05-09T00:00:00.000+09:00
 
 [問いかけの作法 チームの魅力と才能を引き出す技術](https://amzn.asia/d/iGN8JVS)<br/>
 
-<img alt="Book Cover" src={require('./20240503_book-review-how-to-question_book-cover.jpg').default} style={{border: '1px solid black'}} />
+<img alt="Book Cover" src={require('./20240503_book-review-how-to-question_book-cover.jpg').default} style={{border: '1px solid black',maxWidth:'200px'}} />
 
 ※著者の方がPodcastで本を紹介しています
 - [65. 問いかけの作法(前編) w/ YukiAnzai](https://fukabori.fm/episode/65)
