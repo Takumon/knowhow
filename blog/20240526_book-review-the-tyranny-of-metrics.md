@@ -13,7 +13,7 @@ date: 2024-05-26T00:00:00.000+09:00
 
 ## 今回読んだ本
 
-[測りすぎ――なぜパフォーマンス評価は失敗するのか？](www.amazon.co.jp/dp/4622087936)<br/>
+[測りすぎ――なぜパフォーマンス評価は失敗するのか？](https://www.amazon.co.jp/dp/4622087936)<br/>
 <img alt="Book Cover" src={require('./20240526_book-review-the-tyranny-of-metrics_book-cover.jpg').default} style={{border: '1px solid black'}} />
 
 ## サマリ
