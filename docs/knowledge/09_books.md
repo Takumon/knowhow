@@ -77,6 +77,12 @@ sidebar_position: 9
   - ネガティブ・フィードバックをどうやって部下に腹落ちさせるかが学べます
 - (本)[HIGH OUTPUT MANAGEMENT(ハイアウトプット マネジメント) 人を育て、成果を最大にするマネジメント](https://www.amazon.co.jp/dp/4822255018)
   - マネジメントの基礎が学べます。若干日本語訳が読みづらいですが...
+- (本)[問いかけの作法 チームの魅力と才能を引き出す技術](https://amzn.asia/d/iGN8JVS)
+  - [読書感想 「問いかけの作法」は対話のバリエーションを増やしてくれる実践的な本](/knowhow/blog/blog/book-review-how-to-question)
+- (本)[他者と働く～「わかりあえなさ」から始める組織論～](https://www.amazon.co.jp/dp/B07Y5FF3M4)
+  - [読書感想「他者と働く～わかりあえなさから始める組織論～」は、おおらかな気持ちで相手とWin-Winの関係を築く手法と姿勢が学べる本](/knowhow/blog/book-review-work-with-others)
+- (本)[測りすぎ――なぜパフォーマンス評価は失敗するのか？](https://www.amazon.co.jp/dp/4622087936)
+  - [読書感想「測りすぎ――なぜパフォーマンス評価は失敗するのか？」を参考に実りある測定ルールを運用していきたい](/knowhow/blog/book-review-the-tyranny-of-metrics)
 
 ## PodCasts
 
