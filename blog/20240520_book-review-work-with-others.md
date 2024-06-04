@@ -1,5 +1,5 @@
 ---
-slug: /blog/book-review-work-with-others
+slug: /book-review-work-with-others
 sidebar_position: 20240520
 title: 読書感想「他者と働く～わかりあえなさから始める組織論～」は、おおらかな気持ちで相手とWin-Winの関係を築く手法と姿勢が学べる本
 keywords:

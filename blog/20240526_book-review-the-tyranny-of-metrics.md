@@ -1,5 +1,5 @@
 ---
-slug: /blog/book-review-the-tyranny-of-metrics
+slug: /book-review-the-tyranny-of-metrics
 sidebar_position: 20240526
 title: 読書感想「測りすぎ――なぜパフォーマンス評価は失敗するのか？」を参考に実りある測定ルールを運用していきたい
 keywords:
