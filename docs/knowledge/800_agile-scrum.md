@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 800
 ---
 
 # アジャイル・スクラムの学習
@@ -61,5 +61,6 @@ sidebar_position: 5
 ## 学習6
 
 学習1~5と平行しながら以下もおすすめです
+
 - [SCRUM BOOT CAMP THE BOOK【増補改訂版】 スクラムチームではじめるアジャイル開発](https://www.amazon.co.jp/dp/B086GBXRN6)
 - [12. エンプラ向けの組織改革とか、スクラムでのチーム作り・人事評価とか | fukabori.fm](https://fukabori.fm/episode/12)
