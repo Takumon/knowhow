@@ -14,7 +14,6 @@ draft: true
 
 - [Connpassイベントページ](https://web-study.connpass.com/event/321711/)
 
-
 ## 参加したセッション
 
 |時間|題名|プロポーザルリンク|発表者|資料|
@@ -81,22 +80,23 @@ draft: true
       - propsを別名で受け取る時（名前衝突を避ける時）は「xxxProps」とする
       - デザイントークンで利用不可のモジュールはlintで縛る
     - ワレ窓理論が背景にある
-    - ？ 規模感としてどれくらいまで、機械的なlint全社共通にするのか
   - コミュニケーション
     - 目安箱
-      - ？ 組織が小さいとワークするのか
       - ？ GitHubのissueとは違うのか、チームメンバー外から受け付けるため？
-      - ？ KPIとかにしたらインセンティブが働く？
+        - 全社から意見を収集したく、非エンジニアの方の投稿敷居をさげるためにNotionを使っている
       - 布教活動は大事
   - 株主総会：各プロダクトとデザインシステムの双方向のコミュニケーションを行う
     - 目安箱は探知、株主総会は中長期
-    - ？ デザインシステムのアップデートってどうやるんだろう 破壊的変更とか
 - 最近の取り組みとこれから
   - ダークモード対応、テーマを受け取る
   - i18n対応、localeを受け取る
 - まとめ
   - デザインシステムをつくることが目的ではない
 
+
+- デザインシステムは 1X プロダクト に適用している
+- 今後規模拡大した時に１つのデザイントークンを全PJに適用するのか
+- モバイルが立ち上がろうとしていて、モバイルだとChakra使えないので、別チームでやるかを検討中
 
 ## 2. 疎通 2024 by sadnessOjisan
 
@@ -113,7 +113,37 @@ draft: true
 
 ### 2. メモ
 
-// TODO 記載
+#### ローカル
+
+- Swaggerなどローカルモックサーバーだと
+  - CORS設定を自分でやる
+  - Cookieがつかない
+- CORS
+  - ローカルの画面から開発環境のAPIにつなぎに行くとCORSエラー
+    - ブラウザのSameOriginPolicyに穴あけするのがCORS
+    - CORSエアーでもpreflightのリクエストは飛んている
+    - サーバーの他奥だけでいいのか？
+      - Cookieをつけてfetchする場合、リクエストヘッダーに`credentials:include`をつける必要がある
+- CSRF
+- Cookie
+  - リクエストヘッダーに`credentials:'include'`が必要、レスポンスヘッダーに Access-Controll-が必要 ★
+  - クロスサイトなリクエストにクッキーが乗らない
+    - デフォルトでSameSite=Lax　→ SateSite=None
+      - Secure=true をつける
+　- SameSte=noneはいやだ
+- /etc/hostsファイルを書き換える
+- localhostのhttps化が必要
+  - ルート証明書となるオレオレ証明書　発呼
+- HSTSはブラウザの仕様
+  - .appドメインと.devドメインは強制的にHSTS対応
+- cache-control:NO=STORE
+  - [Cache 解体新書](https://zenn.dev/jxck/books/cache-anatomia)
+
+- ModHeader
+  - https://chromewebstore.google.com/detail/modheader-modify-http-hea/idgpnmonknjnojddfkpgkljpfnnfcklj?hl=ja
+
+- ※[3PCA 21 日目: SameSite Cookie | blog.jxck.io](https://blog.jxck.io/entries/2023-12-21/same-site.html)
+
 
 ## 3. モダンフレームワークで損なわれたブラウザバック体験とその改善 by akfm
 
@@ -125,7 +155,58 @@ draft: true
 
 ### 3. メモ
 
-// TODO 記載
+- ※[Next.jsの考え方](https://zenn.dev/akfm/books/nextjs-basic-principle)
+- ※[リッチなWEBアプリケーションのための７つの原則](https://yosuke-furukawa.hatenablog.com/entry/2014/11/14/141415)
+- ※[nuqs | Type-safe search params state management for Next.js](https://nuqs.47ng.com/)
+- ※[@location-state/conformをリリースした](https://zenn.dev/akfm/articles/location-state-conform) ※AppRouterと相性の良いformライブラリをlocation-state対応させるライブラリ
+- ※[Biome、Webのためのツールチェーン](https://biomejs.dev/ja/)　※ESLint Pretiierの代わり
+
+- ブライザバック体験の大切さ
+- ReactのuseStateは復元されない
+- location-stateというライブラリを使えば簡単に復元を実装できる
+
+- 質問
+  - 2023年9月リリース、現状1.2 安定運用しているのか、自社で採用しているプロジェクトはあるか
+  - もともと検索条件にURLに状態を含めている場合などにlocation-stateを使う場合は、既存処理をlocation-stateに寄せる感じなのか
+  - 社内で仕事で作っていると思うが、作ろうとあった背景はあるのか、チームが発足したのか
+
+#### ブライザバック体験の大切さ
+
+- ブラウザに求めること
+  - URL入力
+  - ブラウザバック・フォワード
+  - ブックマーク
+- ブラウザバックの仕様
+  - BFCache(Back Forward Cache)
+  - DOM復元
+  - form復元
+  - キャプチャらしきものの表示
+  - リロード条件
+- ユーザーがブラウザバックに求めること
+  - ページの内容
+  - スクロール①
+  - 操作内容
+    - formの入力内容
+    - モーダル表示位置
+    - etc...
+- Soft Navigation
+  - Next.jsではMPAの画面性にはHard Navigation、JSフレームワークによる画面遷移はSoft Navigationと読んでいる
+  - ページ遷移がJavaScriptで制御される
+  - bfcatcheは利用できない
+  - ブラウザバック時の動作はフレームワークの仕様に強く依存する
+- Soft Navigationでの困りごと
+  - ReactのuseStateは復元されない...
+  - Global Stateはスコープが広い...
+- Soft Navigationの理想
+  - 履歴単位で状態が保存
+  - 戻る・進むごとに復元
+  - リロード時も復元
+- ステートのスコープと復元は別
+- そんな問題は[location-state](https://github.com/recruit-tech/location-state)で解決
+- 拡張ポイント
+  - Syncer：遷移処理
+  - Store：保存処理
+  - 
 
 ## 4. Web エコシステムの人文社会学的解釈 by Jxck
 
