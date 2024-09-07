@@ -7,6 +7,7 @@ keywords:
 tags:
   - 勉強会
 date: 2024-09-07T00:00:00.000+09:00
+draft: true
 ---
 
 ## 概要
@@ -16,13 +17,22 @@ date: 2024-09-07T00:00:00.000+09:00
 
 ## 参加したセッション
 
-|時間|題名|プロポーザルリンク|発表者|
-|-|-|-|-|
-| 1300-1340 | エンジニア視点で見る、組織で運用されるデザインシステムにするには by Shunya078 | [リンク](https://fortee.jp/web-dev-conf-2024/proposal/4d3298c5-c7c5-45da-8dd2-229669780b95) | [Shunya078](https://twitter.com/_Shunya078)|
-| 1400-1430 | 疎通 2024 by sadnessOjisan | [リンク](https://fortee.jp/web-dev-conf-2024/proposal/34ebf17d-53f0-4581-a2a7-e968201c6779) | [sadnessOjisan](https://twitter.com/sadnessOjisan)|
-| 1600-1640 | モダンフレームワークで損なわれたブラウザバック体験とその改善 by akfm | [リンク](https://fortee.jp/web-dev-conf-2024/proposal/346be901-7ef3-4ea8-a9ae-6566eee41f46) | [akfm](https://twitter.com/akfm_sato)|
-| 1700-1740 | Web エコシステムの人文社会学的解釈 by Jxck | [リンク](https://fortee.jp/web-dev-conf-2024/proposal/ec0a2cde-97d3-4252-b8db-5711ada0f5ed) | [Jxck](https://twitter.com/jxck_)|
+|時間|題名|プロポーザルリンク|発表者|資料|
+|-|-|-|-|-|
+| 1300-1340 | エンジニア視点で見る、組織で運用されるデザインシステムにするには by Shunya078 | [リンク](https://fortee.jp/web-dev-conf-2024/proposal/4d3298c5-c7c5-45da-8dd2-229669780b95) | [Shunya078](https://twitter.com/_Shunya078)| [Speaker Deck](https://speakerdeck.com/shunya078/enziniashi-dian-dejian-ru-zu-zhi-deyun-yong-sarerudezainsisutemunisuruniha) |
+| 1400-1430 | 疎通 2024 by sadnessOjisan | [リンク](https://fortee.jp/web-dev-conf-2024/proposal/34ebf17d-53f0-4581-a2a7-e968201c6779) | [sadnessOjisan](https://twitter.com/sadnessOjisan)| TODO記載 |
+| 1600-1640 | モダンフレームワークで損なわれたブラウザバック体験とその改善 by akfm | [リンク](https://fortee.jp/web-dev-conf-2024/proposal/346be901-7ef3-4ea8-a9ae-6566eee41f46) | [akfm](https://twitter.com/akfm_sato)| TODO記載 |
+| 1700-1740 | Web エコシステムの人文社会学的解釈 by Jxck | [リンク](https://fortee.jp/web-dev-conf-2024/proposal/ec0a2cde-97d3-4252-b8db-5711ada0f5ed) | [Jxck](https://twitter.com/jxck_)| TODO記載 |
 
+## 文章の判例
+
+メモの章では行頭に以下を付与します。
+
+- (1) `何も付与しない`・・・発表者が喋ったこと、発表スライドに記載している内容
+- (2) `→`・・・(1)に対する私の感想
+- (3) `※`・・・(1)に対する補足情報
+- (3) `？`・・・(1)に対する疑問・質問
+- (4) `★`・・・後で調べること
 
 ## 1. エンジニア視点で見る、組織で運用されるデザインシステムにするには by Shunya078
 
@@ -34,7 +44,59 @@ date: 2024-09-07T00:00:00.000+09:00
 
 ### 1. メモ
 
-// TODO 記載
+- ※[なぜ我々はデザインシステムを創るのか？ - enechain Tech Blog](https://techblog.enechain.com/entry/design-system-2023)
+- ※[enechain｜Building Energy Markets, Coloring Our Society](https://enechain.co.jp/)
+
+#### 技術スタックとアーキテクチャ構成
+
+- React使用、Next.jsなどは未使用
+- 目的：短期単発PJが複数あっても一貫性のあるUI提供する
+- デザインシステムはnpmライブラリとして公開、各PJで利用
+- ★デザイントークンとは
+
+#### 現在に至るまでの過程
+
+- デザインシステムがうまく運用できた
+- ユーザーの声を聴取し課題をピックアップして、取り込むのが重要
+
+- 立上前
+  - 社内プロダクトが２つ。見た目が同じ ReactとVueのコンポーネントがあった
+  - 全体保守性よりもリリース速度優先していた
+- 有志チーム発足
+  - 他ＰＪ複数立ち上げを機にReact一択に決めた
+  - ※[ちいさくはじめるデザインシステム](https://www.amazon.co.jp/dp/B0BXD2NRHF)
+- デザインシステムPJ立ち上げ
+  - メンバは全員他PJと兼任という形で立ち上げ
+    - 全体思想を各PJに反映するのがうまくいく
+    - 各PJから全体思想への課題吸い上げがうまくいく
+
+- 運用のために取り組んでいる
+  - 暗黙的なコーディング規約を作らない
+    - オンボーディングコスト削減
+    - CIでlinterで縛る　linterは全社共通
+    - CIさえ通れば作業がある程度非同期でできる
+    - ？カスタムルールで縛れないものは　機械的な部分と人の部分の中間みたいなものがありそう
+    - linter例
+      - 変数名プレっフックス「_」はローカル内に限定
+      - propsを別名で受け取る時（名前衝突を避ける時）は「xxxProps」とする
+      - デザイントークンで利用不可のモジュールはlintで縛る
+    - ワレ窓理論が背景にある
+    - ？ 規模感としてどれくらいまで、機械的なlint全社共通にするのか
+  - コミュニケーション
+    - 目安箱
+      - ？ 組織が小さいとワークするのか
+      - ？ GitHubのissueとは違うのか、チームメンバー外から受け付けるため？
+      - ？ KPIとかにしたらインセンティブが働く？
+      - 布教活動は大事
+  - 株主総会：各プロダクトとデザインシステムの双方向のコミュニケーションを行う
+    - 目安箱は探知、株主総会は中長期
+    - ？ デザインシステムのアップデートってどうやるんだろう 破壊的変更とか
+- 最近の取り組みとこれから
+  - ダークモード対応、テーマを受け取る
+  - i18n対応、localeを受け取る
+- まとめ
+  - デザインシステムをつくることが目的ではない
+
 
 ## 2. 疎通 2024 by sadnessOjisan
 
@@ -87,5 +149,9 @@ date: 2024-09-07T00:00:00.000+09:00
 // TODO 記載
 
 ## サマリ
+
+半年ぶりの勉強会出席で、WEB界隈の技術動向キャッチアップできて大変楽しめました。
+
+
 
 🍅
