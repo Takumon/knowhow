@@ -12,28 +12,22 @@ draft: true
 
 ## 概要
 
-- [Connpassイベントページ](https://web-study.connpass.com/event/321711/)
+久しぶりに勉強に参加しました。  
+備忘録です。  
+[Connpassイベントページ](https://web-study.connpass.com/event/321711/)
 
 ## 参加したセッション
 
 |時間|題名|プロポーザルリンク|発表者|資料|
 |-|-|-|-|-|
 | 1300-1340 | エンジニア視点で見る、組織で運用されるデザインシステムにするには by Shunya078 | [リンク](https://fortee.jp/web-dev-conf-2024/proposal/4d3298c5-c7c5-45da-8dd2-229669780b95) | [Shunya078](https://twitter.com/_Shunya078)| [Speaker Deck](https://speakerdeck.com/shunya078/enziniashi-dian-dejian-ru-zu-zhi-deyun-yong-sarerudezainsisutemunisuruniha) |
-| 1400-1430 | 疎通 2024 by sadnessOjisan | [リンク](https://fortee.jp/web-dev-conf-2024/proposal/34ebf17d-53f0-4581-a2a7-e968201c6779) | [sadnessOjisan](https://twitter.com/sadnessOjisan)| TODO記載 |
-| 1600-1640 | モダンフレームワークで損なわれたブラウザバック体験とその改善 by akfm | [リンク](https://fortee.jp/web-dev-conf-2024/proposal/346be901-7ef3-4ea8-a9ae-6566eee41f46) | [akfm](https://twitter.com/akfm_sato)| TODO記載 |
-| 1700-1740 | Web エコシステムの人文社会学的解釈 by Jxck | [リンク](https://fortee.jp/web-dev-conf-2024/proposal/ec0a2cde-97d3-4252-b8db-5711ada0f5ed) | [Jxck](https://twitter.com/jxck_)| TODO記載 |
+| 1400-1430 | 疎通 2024 by sadnessOjisan | [リンク](https://fortee.jp/web-dev-conf-2024/proposal/34ebf17d-53f0-4581-a2a7-e968201c6779) | [sadnessOjisan](https://twitter.com/sadnessOjisan)| [Speaker Deck](https://speakerdeck.com/sadnessojisan/shu-tong-2024) |
+| 1600-1640 | モダンフレームワークで損なわれたブラウザバック体験とその改善 by akfm | [リンク](https://fortee.jp/web-dev-conf-2024/proposal/346be901-7ef3-4ea8-a9ae-6566eee41f46) | [akfm](https://twitter.com/akfm_sato) | [GitHub Pages](https://akifumisato.github.io/slide-of-web-developer-conference-2024/1) |
+| 1700-1740 | Web エコシステムの人文社会学的解釈 by Jxck | [リンク](https://fortee.jp/web-dev-conf-2024/proposal/ec0a2cde-97d3-4252-b8db-5711ada0f5ed) | [Jxck](https://twitter.com/jxck_)| [Docswell](https://www.docswell.com/s/jxck/KP22L8-building-web-based-upon-ecosystem) |
 
-## 文章の判例
+## 1. エンジニア視点で見る、組織で運用されるデザインシステムにするには by [Shunya078](https://twitter.com/_Shunya078)
 
-メモの章では行頭に以下を付与します。
-
-- (1) `何も付与しない`・・・発表者が喋ったこと、発表スライドに記載している内容
-- (2) `→`・・・(1)に対する私の感想
-- (3) `※`・・・(1)に対する補足情報
-- (3) `？`・・・(1)に対する疑問・質問
-- (4) `★`・・・後で調べること
-
-## 1. エンジニア視点で見る、組織で運用されるデザインシステムにするには by Shunya078
+資料：[Speaker Deck](https://speakerdeck.com/shunya078/enziniashi-dian-dejian-ru-zu-zhi-deyun-yong-sarerudezainsisutemunisuruniha)
 
 ### [1. プロポーザル](https://fortee.jp/web-dev-conf-2024/proposal/4d3298c5-c7c5-45da-8dd2-229669780b95)
 
@@ -43,62 +37,72 @@ draft: true
 
 ### 1. メモ
 
-- ※[なぜ我々はデザインシステムを創るのか？ - enechain Tech Blog](https://techblog.enechain.com/entry/design-system-2023)
-- ※[enechain｜Building Energy Markets, Coloring Our Society](https://enechain.co.jp/)
+- ※発表元ネタの記事：[なぜ我々はデザインシステムを創るのか？](https://techblog.enechain.com/entry/design-system-2023)
+- ※発表者の所属：[株式会社enechain](https://enechain.co.jp/)
 
 #### 技術スタックとアーキテクチャ構成
 
-- React使用、Next.jsなどは未使用
-- 目的：短期単発PJが複数あっても一貫性のあるUI提供する
-- デザインシステムはnpmライブラリとして公開、各PJで利用
-- ★デザイントークンとは
+- 背景：React + Chakra UIを利用
+- 背景：Next.jsなどは未使用
+- 背景：複数PJ五月雨立ち上げ
+- 目的：一貫したUI提供＆開発効率向上
+- 手段：デザインシステムチーム（組織横断チーム）がnpmライブラリとして公開して各PJで利用
+  - 以下３つをmonorepoで管理
+    - apps/style_guide：利用者確認用ガイド
+    - packages/components：共通コンポ
+    - packages/icons：TSXに変換したSVG
+  - monorepo管理はpnpm workspace利用
+  - バージョニング・チェンジログ生成は[Changeset](https://github.com/changesets/changesets)を利用
+    - ※[Changesetsで頑張らないリリース（モノレポ対応）](https://zenn.dev/mouse_484/articles/easy-changesets)
 
 #### 現在に至るまでの過程
 
-- デザインシステムがうまく運用できた
-- ユーザーの声を聴取し課題をピックアップして、取り込むのが重要
-
-- 立上前
-  - 社内プロダクトが２つ。見た目が同じ ReactとVueのコンポーネントがあった
-  - 全体保守性よりもリリース速度優先していた
-- 有志チーム発足
-  - 他ＰＪ複数立ち上げを機にReact一択に決めた
-  - ※[ちいさくはじめるデザインシステム](https://www.amazon.co.jp/dp/B0BXD2NRHF)
+- デザインシステムうまくいった
+- デザインシステムの利用者（各プロダクトのチームメンバー）の声を聞くのが大事
+- 立上前（PJは２つ）
+  - 事業価値提供速度を優先し技術未統一
+  - 社内プロダクトがReact製、Vue製の２つ。UIの見た目は同じ。
+- 有志チーム発足（PJが増えていく）
+  - 全社でReact採用を決定
+  - PJ立上機会が増加
+  - 上記背景もあり既存コンポーネントの共通化を開始、有志でチーム発足
+  - 最初はデザインシステムと呼べないが「小さく始める」ことが大事
+    - ※[ちいさくはじめるデザインシステム](https://www.amazon.co.jp/dp/B0BXD2NRHF)
 - デザインシステムPJ立ち上げ
-  - メンバは全員他PJと兼任という形で立ち上げ
-    - 全体思想を各PJに反映するのがうまくいく
-    - 各PJから全体思想への課題吸い上げがうまくいく
+  - デザイナー参画
+  - 全メンバ実PJと兼任
+  - 仕組みとしてデザイントークン導入・ツールとしてFigma導入
 
-- 運用のために取り組んでいる
-  - 暗黙的なコーディング規約を作らない
-    - オンボーディングコスト削減
-    - CIでlinterで縛る　linterは全社共通
-    - CIさえ通れば作業がある程度非同期でできる
-    - ？カスタムルールで縛れないものは　機械的な部分と人の部分の中間みたいなものがありそう
-    - linter例
-      - 変数名プレっフックス「_」はローカル内に限定
-      - propsを別名で受け取る時（名前衝突を避ける時）は「xxxProps」とする
-      - デザイントークンで利用不可のモジュールはlintで縛る
-    - ワレ窓理論が背景にある
-  - コミュニケーション
-    - 目安箱
-      - ？ GitHubのissueとは違うのか、チームメンバー外から受け付けるため？
-        - 全社から意見を収集したく、非エンジニアの方の投稿敷居をさげるためにNotionを使っている
-      - 布教活動は大事
+#### 運用のために取り組んでいるアプローチ
+
+- エンジニアリング観点
+  - 暗黙的な実装規約を作らない（=機械的な実装規約に徹する）
+  - オンボーディングコスト削減（規約はLinterの設定など見ればわかる）
+  - CIでLinterで縛る。Linterは全社共通
+  - 非同期部分が増える（実装→リモートリポジトリアップ→CI通す）
+  - linter例
+    - 変数名プレフィックス「_」はローカル内に限定
+    - propsを別名で受け取る時（名前衝突を避ける時）は「xxxProps」とする
+    - デザイントークンで利用不可のモジュールはlintで縛る
+  - ワレ窓理論が背景に機械的なLinterを徹底
+- コミュニケーション観点
+  - 目安箱
+    - 布教活動は大事
   - 株主総会：各プロダクトとデザインシステムの双方向のコミュニケーションを行う
     - 目安箱は探知、株主総会は中長期
-- 最近の取り組みとこれから
-  - ダークモード対応、テーマを受け取る
-  - i18n対応、localeを受け取る
-- まとめ
-  - デザインシステムをつくることが目的ではない
 
+### 1. 質疑応答
 
-- デザインシステムは 1X プロダクト に適用している
-- 今後規模拡大した時に１つのデザイントークンを全PJに適用するのか
-- モバイルが立ち上がろうとしていて、モバイルだとChakra使えないので、別チームでやるかを検討中
+- 質問）現在デザイントークンを提供しているPJはどれくらいか？
+  - 回答）デザインシステムは10以上のPJに適用している
+- 質問）今後さらにPJが増えてもデザイントークン１チームでガバナンスを効かせるのか？
+  - 回答）モバイルPJ立上予定で、モバイルだとChakra UIが使えないのなどの技術的制約がありどうしても資産を共通化できない。そのためWEBとは別チームでやるかなどを検討中
+- 質問）目安箱はGitHubのissueという手段はとらないのか、非エンジニアからも意見を受け付けるため？
+  - 回答）全社から意見を収集したく、非エンジニアの方の投稿敷居を下げるためGitHubのissueは使わずに、全社で導入しているNotionを使っている
 
-## 2. 疎通 2024 by sadnessOjisan
+## 2. 疎通 2024 by [sadnessOjisan](https://twitter.com/sadnessOjisan)
+
+資料：[Speaker Deck](https://speakerdeck.com/sadnessojisan/shu-tong-2024)
 
 ### [2. プロポーザル](https://fortee.jp/web-dev-conf-2024/proposal/34ebf17d-53f0-4581-a2a7-e968201c6779)
 
@@ -144,8 +148,9 @@ draft: true
 
 - ※[3PCA 21 日目: SameSite Cookie | blog.jxck.io](https://blog.jxck.io/entries/2023-12-21/same-site.html)
 
+## 3. モダンフレームワークで損なわれたブラウザバック体験とその改善 by [akfm](https://twitter.com/akfm_sato)
 
-## 3. モダンフレームワークで損なわれたブラウザバック体験とその改善 by akfm
+資料：[GitHub Pages](https://akifumisato.github.io/slide-of-web-developer-conference-2024/1)
 
 ### 3. [プロポーザル](https://fortee.jp/web-dev-conf-2024/proposal/346be901-7ef3-4ea8-a9ae-6566eee41f46)
 
@@ -206,9 +211,10 @@ draft: true
 - 拡張ポイント
   - Syncer：遷移処理
   - Store：保存処理
-  - 
 
-## 4. Web エコシステムの人文社会学的解釈 by Jxck
+## 4. Web エコシステムの人文社会学的解釈 by [Jxck](https://twitter.com/jxck_)
+
+資料：[Docswell](https://www.docswell.com/s/jxck/KP22L8-building-web-based-upon-ecosystem)
 
 ### [4. プロポーザル](https://fortee.jp/web-dev-conf-2024/proposal/ec0a2cde-97d3-4252-b8db-5711ada0f5ed)
 
@@ -227,12 +233,14 @@ draft: true
 
 ### 4. メモ
 
-// TODO 記載
+- エコシステムは問題が起きても問題じゃなくす力がある
 
-## サマリ
+## 感想
 
-半年ぶりの勉強会出席で、WEB界隈の技術動向キャッチアップできて大変楽しめました。
-
-
+- 半年ぶりの勉強会出席で、WEB界隈の技術動向キャッチアップできて大変楽しめました。
+- エコシステムを流行らす側は、技術以外の部分（経済制、社会性）でも普及させようとする（カンファレンスを開いたり、スーパースターを集めたり）
+- 技術を選定を１つ１つちゃんとやるのは、オーバーフローしがちなので、技術とは関係ないところで技術選定しがち
+- エコシステムは移ろいゆく。人間は飽きる
+- 
 
 🍅
