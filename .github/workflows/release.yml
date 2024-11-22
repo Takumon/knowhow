@@ -17,16 +17,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
-    - name: Install Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20.x'
-        cache: 'npm'
-
-    - run: npm install
-
-    - name: Build
-      run: npm run archive:bookReview
+    - name: archive
+      run: |
+        echo "Archiving blog posts..."
+        zip book-review-list.zip -r blog  -x "^(?!.*book-review).*$"
+        tar -zcvf book-review-list.tar.gz blog --exclude "^(?!.*book-review).*$"
 
     - name: Release
       uses: softprops/action-gh-release@v2
