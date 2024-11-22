@@ -20,8 +20,8 @@ jobs:
     - name: archive
       run: |
         echo "Archiving blog posts..."
-        zip book-review-list.zip -r blog  -x "^(?!.*book-review).*$"
-        tar -zcvf book-review-list.tar.gz blog --exclude "^(?!.*book-review).*$"
+        zip book-review-list.zip -r blog/**.md  -x "20240907_report-of-web-developer-conference-2024.md" "20240503_book-review-how-to-question_book-cover.md"
+        tar -zcvf book-review-list.tar.gz blog/**.md --exclude "20240907_report-of-web-developer-conference-2024.md" --exclude "20240503_book-review-how-to-question_book-cover.md"
 
     - name: Release
       uses: softprops/action-gh-release@v2
