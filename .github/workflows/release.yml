@@ -33,6 +33,6 @@ jobs:
       with:
         prerelease: true
         files: |
-          - book-review-list.zip
-          - book-review-list.tar.gz
+          book-review-list.zip
+          book-review-list.tar.gz
         fail_on_unmatched_files: true
